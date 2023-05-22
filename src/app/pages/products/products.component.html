@@ -1,0 +1,27 @@
+
+<div class="table-responsive">
+  <table class="table table-primary">
+      <thead>
+          <tr>
+              <th scope="col">Nombre</th>
+              <th scope="col">Precio</th>
+              <th scope="col">Descripción</th>
+              <th scope="col">Imagen</th>
+              <th scope="col">Categoría</th>
+
+          </tr>
+      </thead>
+      <tbody>
+          <tr class="" *ngFor = "let product of products">
+              <td>{{product.title}}</td>
+              <td>{{product.price}}</td>
+              <td>{{product.description}}</td>
+              <td><img src="{{product.images}}" alt="" width="150px" height="200px"></td>
+              <td>{{product.category}}</td>
+              <td> <a href="" (click)="deleteProduct(product.id)">Eliminar</a></td>
+
+          </tr>
+      </tbody>
+  </table>
+</div>
+
